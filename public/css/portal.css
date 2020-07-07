@@ -1,0 +1,176 @@
+body{
+
+
+	margin: 0 ;
+	width: 100% ;
+	min-width: 1400px;
+
+}
+
+.wrapper{
+
+	width: 100% ;
+	height: 100% ;
+		
+
+}
+
+/*側邊欄*/
+
+
+.sort{
+
+	width: 14% ;
+	height: 100vh ;
+	margin-top: 0px ;
+	background-color: rgb(11,34,51) ;
+	box-shadow: 0px 0px 7px 1px rgb(200,200,200);
+
+	float: left ;
+	max-width: 500px ;
+
+
+}
+
+
+h1{
+	margin: 0px;
+	font-family: '微軟正黑體' ;
+
+}
+
+
+a{
+	 text-decoration:none;
+}
+
+
+p{
+
+	margin: 0px;
+	display: inline-block;
+	font-family: '微軟正黑體' ;
+	font-size: 20px ;
+
+
+}
+
+form{
+
+	display: inline-block;
+}
+
+
+input{
+
+	border-width: 0px;
+	font-family: '微軟正黑體' ;
+	font-size: 13px ;
+}
+
+
+
+.input_button{
+
+	display: inline-block;
+	float: right; 
+
+}
+
+.form_lable{
+
+	margin-top: 10px;
+	width: 70%;
+}
+
+.company{
+
+	/*background: -webkit-linear-gradient(left top,rgb(166,209,240),rgb(72,176,229)) ;*/
+	background-color: rgb(11,34,51) ;
+	margin-bottom: 10% ;
+}
+
+.company-name{
+
+	letter-spacing: 8px ;
+	font-size: 30px ;
+	color: rgb(255,255,255) ;
+
+	padding-top: 15% ;
+	padding-bottom:15% ;
+	padding-left: 10% ;
+
+	border-bottom: 2px rgb(255,255,255) solid;
+
+
+}
+
+
+.item{
+
+
+
+}
+
+.item-block{
+
+	padding-left: 7% ;
+	padding-top: 5% ;
+	padding-bottom: 5% ;
+	color: rgb(255,255,255) ;
+
+}
+
+.item-block:hover{
+
+	background-color: rgb(255,255,255);
+	color: rgb(0,0,0) ;
+
+}
+
+.item-name{
+
+	font-size: 20px;
+	letter-spacing: 4px ;
+
+	
+
+}
+
+
+/************************************/
+
+/*內容模板*/
+
+
+.content{
+
+	width: 85% ;
+	height: 100% ;
+	float: left ;
+	display: inline-block;
+
+
+}
+
+
+.banner{
+
+	width: 100% ;
+	height: 5vh ;
+	background-color: rgb(255,255,255) ;
+
+}
+
+
+
+
+/***********************************/
+
+
+
+
+
+
+/************************************/
+
