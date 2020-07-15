@@ -40,6 +40,10 @@ $routes->get('Routine', 'Pages::Routine') ;
 $routes->post('Madeorder','Pages::Madeorder') ;
 $routes->post('Materials' ,'Pages::Materials') ;
 $routes->post('TransferDocument' , 'Pages::TransferDocument') ;
+
+$routes->get('BasicInfo' , 'PageBasic::BasicInfo') ;
+$routes->post('CustomerInfo' , 'PageBasic::CustomerInfo') ;
+$routes->post('NewCustomer' , 'PageBasic::NewCustomer') ;
 //$routes->post('NextPages','Home::NextPages/nextpage') ;
 
 

@@ -31,11 +31,12 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `customer-info`;
 CREATE TABLE IF NOT EXISTS `customer-info` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `systemNum` varchar(255) NOT NULL,
   `company-name` varchar(255) CHARACTER SET utf8 NOT NULL,
   `address` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `GUI-number` int(11) NOT NULL,
-  `tel` int(11) NOT NULL,
-  `fax` int(11) NOT NULL,
+  `guiNum` varchar(255) NOT NULL,
+  `tel` varchar(255) NOT NULL,
+  `fax` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;

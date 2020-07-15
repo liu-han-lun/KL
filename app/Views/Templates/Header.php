@@ -6,6 +6,8 @@
 	
 	<link rel="stylesheet" type="text/css" href="/css/portal.css">
 	<link rel="stylesheet" type="text/css" href="/css/routine.css">
+	<link rel="stylesheet" type="text/css" href="/css/basic-info.css">
+	<link rel="stylesheet" type="text/css" href="/css/customer-info.css">
 
 </head>
 <body>
@@ -21,7 +23,7 @@
 			<h1 class ="item-name">例行作業 > </h1>
 		</div>
 	</a>
-	<a href="" class="item">
+	<a href="BasicInfo" class="item">
 		<div class="item-block">
 			<h1 class ="item-name">基本資料 > </h1>
 		</div>

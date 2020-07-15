@@ -123,14 +123,14 @@ input{
 
 .item-block:hover{
 
-	background-color: rgb(255,255,255);
+	background-color: rgb(255,255,255) ;
 	color: rgb(0,0,0) ;
 
 }
 
 .item-name{
 
-	font-size: 20px;
+	font-size: 20px ;
 	letter-spacing: 4px ;
 
 	
@@ -148,7 +148,7 @@ input{
 	width: 85% ;
 	height: 100% ;
 	float: left ;
-	display: inline-block;
+	display: inline-block ;
 
 
 }
