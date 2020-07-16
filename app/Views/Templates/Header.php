@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/routine.css">
 	<link rel="stylesheet" type="text/css" href="/css/basic-info.css">
 	<link rel="stylesheet" type="text/css" href="/css/customer-info.css">
+	<link rel="stylesheet" type="text/css" href="/css/newcustomer.css">
 
 </head>
 <body>

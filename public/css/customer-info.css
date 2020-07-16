@@ -15,8 +15,9 @@
 .customer-info > .work > .work-item{
 
 	display: inline-block ;
+	vertical-align:middle;
 	padding-top: 3% ;
-	padding-left: 4% ;
+	padding-left: 3% ;
 
 
 }
@@ -41,7 +42,6 @@
 	padding-left: 0 ;
 	padding-right: 0 ;
 	padding-bottom: 2% ;
-	border-bottom: 3px rgb(11,34,55) solid;
 }
 
 
@@ -50,22 +50,25 @@
 
 .customer-info-item{
 
-
-	padding-right: 3% ;
+	display: inline-block;
+	vertical-align:middle;
+	padding-top: 3% ;
+	margin-left: 1% ;
 
 }
 
 .customer-info-item > form {
 
-	margin-top: 3% ;
-	padding-left: 4% ;
+
+	margin-top: 1% ;
+	padding-left: 3% ;
 
 
 }
 
 .customer-info-item > form > input{
 
-	width:150px ;
+	width:140px ;
 	height: 50px ; 	
 	border-radius:30px; 
 	background-color: rgb(255,255,255) ;

@@ -33,10 +33,10 @@ CREATE TABLE IF NOT EXISTS `customer-info` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `systemNum` varchar(255) NOT NULL,
   `company-name` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `address` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `guiNum` varchar(255) NOT NULL,
   `tel` varchar(255) NOT NULL,
   `fax` varchar(255) NOT NULL,
+  `address` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `guiNum` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;

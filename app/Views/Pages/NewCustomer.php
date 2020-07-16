@@ -1,30 +1,70 @@
 	<section class = "customer-info">
-		<div class="work">
-			<div class = "work-item">
+		<div class="back">
+			<div class = "back-item">
 				<form action="CustomerInfo" method="post" accept-charset="utf-8">
-					<input type="submit" name="action" value="廠商資料">
+					<input type="submit" name="action" value="回上頁" class="back-button">
 				</form>				
 			</div>
 		</div>
 		<div class="customer-item">
-			<form action="" method="post" accept-charset="utf-8">
-				<table>
-					<caption></caption>
-					<thead>
-						<tr>
-							<th>header</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>data</td>
-							<td>data2</td>
-						</tr>
-						<tr>
-							<td>data</td>
-						</tr>
-					</tbody>
-				</table>
+			<form action="CustomerInfo" method="post" accept-charset="utf-8">
+				<div class="table-block">					
+					<table>
+						<caption></caption>
+						<thead>
+							<tr>
+								<th>
+									<h1>電腦編號</h1>								
+								</th>
+								<th>
+									<input type="text" name="comperNum" class="input-text">				
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<h1>公司名稱</h1>									
+								</th>
+								<th>
+									<input type="text" name="companyName" class="input-text">
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<h1>電話號碼</h1>
+								</th>								
+								<th>
+									<input type="text" name="tel" class="input-text">
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<h1>傳真號碼</h1>
+								</th>
+								<th>
+									<input type="text" name="fax" class="input-text">
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<h1>公司地址</h1>
+								</th>
+								<th>
+									<input type="text" name="address" class="input-text">
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<h1>統一編號</h1>
+								</th>
+								<th>
+									<input type="text" name="guiNum" class="input-text">
+								</th>
+							</tr>
+							</tr>
+						</thead>					
+					</table>
+					<input type="submit" name="action" value="送出" class="submit-button">
+				</div>
 			</form>
 						
 		</div>			
