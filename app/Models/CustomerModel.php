@@ -17,7 +17,6 @@
 	 	public function getList()
 	 	{
 
-
 	 		$builder = $this->db->table('customer-info') ;
 	 		$query = $builder->orderBy('id')->get() ;
 	 		return $query->getResult() ; 

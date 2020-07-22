@@ -14,6 +14,59 @@
 		}
 
 		
+		public function addCtrl()
+		{
+
+
+			if(isset($_POST['action']) && $_POST['action'] == '送出')
+			{
+				
+
+				if(in_array(NULL, $_POST))
+				{
+					$error = '填入失敗' ;
+					return $error ;
+
+				}else {
+
+					$data = [
+
+						'systemNum'    => $_POST['systemNum'] ,
+						'company-name' => $_POST['company-name'] ,
+						'tel'     => $_POST['tel'] ,
+						'fax'     => $_POST['fax'] ,
+						'address' => $_POST['address'] ,
+						'guiNum'  => $_POST['guiNum'] 
+					] ;
+
+					$this->model->addList( $data ) ;
+
+				}				
+
+			}
+
+			
+		}
+
+
+
+		public function getCtrl()
+		{
+			return $this->model->getList() ;			
+		}
+
+
+
+		public function deleteCtrl()
+		{
+
+
+		}
+
+		public function editCtrl()
+		{
+
+		}
 
 
 
