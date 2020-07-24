@@ -27,8 +27,8 @@
 				$_SESSION['decide'] += 1 ;
 			}
 
-
 			$data['companyList'] = $customer -> getCtrl() ;
+			$data['delete'] = $customer->deleteCtrl() ; 
 
 
 			echo view('Templates/Header') ;
@@ -41,6 +41,7 @@
 					]) ;			
 
 			echo view('Templates/Footer') ;
+
 		}
 
 		public function NewCustomer($page = 'newcustomer')

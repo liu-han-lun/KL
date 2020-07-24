@@ -17,7 +17,7 @@
 	display: inline-block ;
 	vertical-align:middle;
 	padding-top: 3% ;
-	padding-left: 3% ;
+	padding-left: 5% ;
 
 
 }
@@ -42,6 +42,7 @@
 	padding-left: 0 ;
 	padding-right: 0 ;
 	padding-bottom: 2% ;
+
 }
 
 
@@ -96,11 +97,13 @@
 	width: 90% ;
 	background-color: rgb(255,255,255) ;
 	margin: 3% auto ;
+	box-shadow: 0px 0px 10px 0px rgb(190,190,190);
+
 
 
 }
 
-.customer-info-block > form {
+.customer-info-block > .customer-info-block-form {
 
 	display: block ;
 	padding-top: 3% ;
@@ -108,7 +111,7 @@
 
 }
 
-.customer-info-block > form > table {
+.customer-info-block > .customer-info-block-form > table {
 
 	margin: 0 auto ;
 	padding-top: 10% ;
@@ -117,16 +120,16 @@
 
 }
 
-.customer-info-block > form > table > tbody{
+.customer-info-block > .customer-info-block-form > table > tbody{
 
 
 }
 
-.customer-info-block > form > table > tbody > tr{
+.customer-info-block > .customer-info-block-form > table > tbody > tr{
 
 }
 
-.customer-info-block > form > table > tbody > tr > td {
+.customer-info-block > .customer-info-block-form > table > tbody > tr > td {
 
 	border-top: 2px rgb(230,230,230) solid;
 	padding: 0.75rem 1rem ;
@@ -134,7 +137,7 @@
 	white-space: nowrap ;
 }
 
-.customer-info-block > form > table > tbody > tr > .title{
+.customer-info-block > .customer-info-block-form > table > tbody > tr > .title{
 
 	padding-bottom: 0.75rem ;
 	border-top : none;
@@ -145,7 +148,7 @@
 }
 
 
-.customer-info-block > form > table > tbody > tr > td > p{
+.customer-info-block > .customer-info-block-form > table > tbody > tr > td > p{
 
 	font-size: 16px ;
 

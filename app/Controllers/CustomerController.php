@@ -4,7 +4,7 @@
 	/**
 	 * 
 	 */
-	class CustomerController  
+	class CustomerController 
 	{
 		
 		public function __construct()
@@ -19,9 +19,7 @@
 
 
 			if(isset($_POST['action']) && $_POST['action'] == '送出')
-			{
-				
-
+			{				
 				if(in_array(NULL, $_POST))
 				{
 					$error = '填入失敗' ;
@@ -40,12 +38,8 @@
 					] ;
 
 					$this->model->addList( $data ) ;
-
 				}				
-
-			}
-
-			
+			}		
 		}
 
 
@@ -59,7 +53,12 @@
 
 		public function deleteCtrl()
 		{
+			if(isset($_POST['delete']))
+			{
+				$id = $_POST['deleteNum'] ;
+				$this->model->deleteList($id) ;
 
+			}
 
 		}
 

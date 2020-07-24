@@ -12,7 +12,7 @@
 			</div>
 		</div>
 		<div class="customer-info-block">
-			<form action="" method="post" accept-charset="utf-8">
+			<div class="customer-info-block-form">
 				<table>
 					<tbody>
 						<tr>
@@ -49,6 +49,14 @@
 							<td class="title">
 								<h1>
 									統一編號
+								</h1>
+							</td>
+							<td class="title">
+								<h1>
+								</h1>
+							</td>
+							<td class="title">
+								<h1>
 								</h1>
 							</td>
 						</tr>
@@ -90,12 +98,18 @@
 										<?php echo $row->guiNum ?>
 									</p>
 								</td>
+								<td>
+									<form action="CustomerInfo" method="post" accept-charset="utf-8">
+										<input type="hidden" name="deleteNum" value="<?php echo $row->id ; ?>">
+										<input type="submit" name="delete" value="刪除">				
+									</form>
+								</td>
 							</tr>
 							<?php $i++ ; 
 							endforeach ?>	
 					</tbody>
 				</table>
-			</form>			
+			</div>
 		</div>			
 	</section>	
 </section>
