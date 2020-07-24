@@ -25,7 +25,7 @@
 									<h1>公司名稱</h1>									
 								</th>
 								<th>
-									<input type="text" name="company-name" class="input-text" required="required">
+									<input type="text" name="companyName" class="input-text" required="required">
 								</th>
 							</tr>
 							<tr>

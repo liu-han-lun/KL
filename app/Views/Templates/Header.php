@@ -20,7 +20,7 @@
 		</a>
 	</div>
 	<a href="Routine" class="item">
-		<div class="item-block">
+		<div class="item-block"  id="first-item">
 			<h1 class ="item-name">例行作業 > </h1>
 		</div>
 	</a>

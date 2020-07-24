@@ -32,7 +32,7 @@
 					$data = [
 
 						'systemNum'    => $_POST['systemNum'] ,
-						'company-name' => $_POST['company-name'] ,
+						'companyName' => $_POST['companyName'] ,
 						'tel'     => $_POST['tel'] ,
 						'fax'     => $_POST['fax'] ,
 						'address' => $_POST['address'] ,

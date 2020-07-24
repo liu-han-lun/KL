@@ -36,7 +36,7 @@
 			echo view('Pages/CustomerInfo' ,
 
 					[ 
-						'companyList' => $data['companyList'],
+						'query' => $data['companyList'],
 						'error' => $data['error']
 					]) ;			
 
