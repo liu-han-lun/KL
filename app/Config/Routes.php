@@ -49,6 +49,14 @@ $routes->post('NewCustomer' , 'PageCustomer::NewCustomer') ;
 //$routes->post('NextPages','Home::NextPages/nextpage') ;
 
 
+$routes->get('demo' , 'Demo::index');
+$routes->get('demo/add' , 'Demo::add');
+$routes->post('demo/add' , 'Demo::runAdd');
+$routes->get('demo/edit' , 'Demo::edit');
+$routes->post('demo/edit' , 'Demo::runEdit');
+$routes->post('demo/delete' , 'Demo::delete');
+
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

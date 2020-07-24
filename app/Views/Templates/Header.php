@@ -34,7 +34,11 @@
 			<h1 class ="item-name">薪資資料 > </h1>
 		</div>
 	</a>
-	
+	<a href="/demo" class="item">
+		<div class="item-block">
+			<h1 class ="item-name">DEMO > </h1>
+		</div>
+	</a>
 </div>
 
 
