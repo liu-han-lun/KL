@@ -36,16 +36,18 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('Routine', 'Pages::Routine') ;
-$routes->post('Madeorder','Pages::Madeorder') ;
-$routes->post('Materials' ,'Pages::Materials') ;
-$routes->post('TransferDocument' , 'Pages::TransferDocument') ;
+$routes->get('Routine', 'Routine::index') ;
+$routes->get('Madeorder', 'Madeorder::index') ;
+$routes->get('Materials', 'Materials::index') ;
+$routes->get('TransferDoc' , 'TransferDoc::index') ;
 
-$routes->get('BasicInfo' , 'PageBasic::BasicInfo') ;
-
-
-$routes->post('CustomerInfo' , 'PageCustomer::CustomerInfo') ;
-$routes->post('NewCustomer' , 'PageCustomer::NewCustomer') ;
+$routes->get('BasicInfo' , 'BasicInfo::index') ;
+$routes->get('CustomerInfo' ,'CustomerInfo::index') ;
+$routes->get('CustomerInfo/add' , 'CustomerInfo::add') ;
+$routes->post('CustomerInfo/add' ,'CustomerInfo::runAdd') ;
+$routes->get('CustomerInfo/edit' ,'CustomerInfo::edit') ;
+$routes->post('CustomerInfo/edit' ,'CustomerInfo::runEdit') ;
+$routes->post('CustomerInfo/delete' ,'CustomerInfo::delete') ;
 //$routes->post('NextPages','Home::NextPages/nextpage') ;
 
 
