@@ -9,7 +9,7 @@
 .routine > .work {
 
 	padding-top: 10% ;
-	padding-left: 10% ;
+	padding-left: 15% ;
 	margin: auto;
 
 }
@@ -18,13 +18,14 @@
 
 	display: inline-block ;
 	padding-top: 5% ;
-	padding-left: 4% ;
+	padding-left: 5% ;
 
 }
 
-.routine > .work > .work-item input{
+.routine > .work > .work-item a{
+	display: inline-block ;
 
-	width: 300px ;
+	width: 200px ;
 	height: 100px ;
 	background-color: rgb(255,255,255) ;
 
@@ -33,12 +34,13 @@
 	font-weight: bold ;
 	letter-spacing: 4px ;
 	color: rgb(0,0,0) ;
-
+	line-height: 5rem ;
+	text-align: center;
 
 	cursor: pointer ;
 }
 
-.routine > .work > .work-item input:hover{
+.routine > .work > .work-item a:hover{
 
 	background-color: rgb(11,34,51) ;
 	color: rgb(255,255,255) ;

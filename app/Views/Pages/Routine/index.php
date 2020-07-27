@@ -4,19 +4,13 @@
 	<section class = "routine">
 		<div class="work">
 			<div class = "work-item">
-				<form action="Madeorder" method="post" accept-charset="utf-8">
-					<input type="submit" name="action" value="製令單">
-				</form>				
+				<a href="Madeorder">製令單</a>				
 			</div>
 			<div class = "work-item">
-				<form action="Materials" method="post" accept-charset="utf-8">
-					<input type="submit" name="action" value="入廠紀錄">
-				</form>				
+				<a href="Materials">入廠紀錄</a>				
 			</div>
 			<div class = "work-item">
-				<form action="TransferDoc" method="post" accept-charset="utf-8">
-					<input type="submit" name="action" value="移轉單">
-				</form>				
+				<a href="TransferDoc">移轉單</a>				
 			</div>
 		</div>
 		
