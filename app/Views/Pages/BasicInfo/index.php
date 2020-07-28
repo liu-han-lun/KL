@@ -7,7 +7,7 @@
 				<a href="CustomerInfo">廠商資料</a>			
 			</div>
 			<div class = "work-item">
-				<a href="Home">產品資料</a>			
+				<a href="ProductInfo">產品資料</a>			
 			</div>
 			<div class = "work-item">
 				<a href="Home">定價資料</a>				

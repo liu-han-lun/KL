@@ -48,6 +48,8 @@ $routes->post('CustomerInfo/add' ,'CustomerInfo::runAdd') ;
 $routes->get('CustomerInfo/edit' ,'CustomerInfo::edit') ;
 $routes->post('CustomerInfo/edit' ,'CustomerInfo::runEdit') ;
 $routes->post('CustomerInfo/delete' ,'CustomerInfo::delete') ;
+
+$routes->get('ProductInfo' , 'ProductInfo::index') ;
 //$routes->post('NextPages','Home::NextPages/nextpage') ;
 
 

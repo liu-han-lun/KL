@@ -1,0 +1,123 @@
+.product-info{
+
+	width: 100% ;
+	height: 95vh ;
+	background-color: rgb(230,230,230) ;
+
+}
+
+.product-info > .work {
+
+	margin: auto;
+
+}
+
+.product-info > .work > .work-item{
+
+	display: inline-block ;
+	vertical-align:middle;
+	padding-top: 3% ;
+	padding-left: 5% ;
+
+
+}
+
+.product-info > .work > .work-item form{
+
+
+}
+
+.product-info > .work > .work-item a{
+
+
+	font-family: '微軟正黑體' ;
+	font-size: 40px;
+	font-weight: bold ;
+	letter-spacing: 6px ;
+	color: rgb(0,0,0) ;
+
+	cursor: pointer ;
+	border-style: none ;
+	background-color: rgba(255,255,255,0);
+	padding-left: 0 ;
+	padding-right: 0 ;
+	padding-bottom: 2% ;
+
+}
+
+.product-info-item{
+
+	display: inline-block;
+	vertical-align:middle;
+	padding-top: 3% ;
+	margin-left: 1% ;
+	text-align: center;
+
+
+}
+
+.product-info-item > a{
+
+	display: block;
+	width:140px ;
+	height: 50px ; 	
+	border-radius:30px;
+	color: rgb(0,0,0) ; 
+	background-color: rgb(255,255,255) ;
+
+	font-family: '微軟正黑體';
+	font-size: 16px ;
+	font-weight: bold ;
+	letter-spacing: 4px ;
+	line-height: 2.5rem;
+	
+	cursor: pointer ;
+}
+
+.product-info-item > a:hover{
+
+	background-color: rgb(11,34,51) ;
+	color: rgb(255,255,255) ;
+}
+
+/*表單內容*/
+
+.product-info-block{
+	margin-left:5% ;
+	width: 90% ;
+}
+
+.product-info-block-form{
+}
+
+.product-info-block-form table{
+	border-collapse: collapse ;
+}
+
+
+.product-info-block-form caption{
+	color: black ;
+	font-size: 34px ;
+	letter-spacing: 8px ;
+	text-align: left ;
+	padding-top: 10% ;
+	padding-bottom: 3% ;
+}
+
+.product-info-block-form tbody{
+	background-color: rgb(255,255,255) ;
+
+}
+.product-info-block-form .title{	
+	font-size: 20px;
+}
+.product-info-block-form td{
+	
+	padding: 0.75rem 1rem ;
+	white-space: nowrap ;
+}
+
+
+
+
+
