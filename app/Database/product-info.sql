@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機: localhost:3306
--- 產生時間： 2020 年 07 月 28 日 16:43
+-- 產生時間： 2020 年 07 月 29 日 16:55
 -- 伺服器版本: 5.7.23
 -- PHP 版本： 7.2.8
 
@@ -22,7 +22,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `product-info` (
   `id` int(255) NOT NULL,
-  `companyName` varchar(255) NOT NULL,
+  `systemNum` varchar(255) NOT NULL,
   `productNum` varchar(255) NOT NULL,
   `productSpec` varchar(255) NOT NULL,
   `unit` varchar(255) NOT NULL,
@@ -49,4 +49,4 @@ ALTER TABLE `product-info`
 -- 使用資料表 AUTO_INCREMENT `product-info`
 --
 ALTER TABLE `product-info`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;

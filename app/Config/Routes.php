@@ -50,6 +50,9 @@ $routes->post('CustomerInfo/edit' ,'CustomerInfo::runEdit') ;
 $routes->post('CustomerInfo/delete' ,'CustomerInfo::delete') ;
 
 $routes->get('ProductInfo' , 'ProductInfo::index') ;
+$routes->get('ProductInfo/add' , 'ProductInfo::add') ;
+$routes->post('ProductInfo/add' , 'ProductInfo::runAdd') ;
+
 //$routes->post('NextPages','Home::NextPages/nextpage') ;
 
 

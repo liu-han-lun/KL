@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="/css/customer-info.css">
 	<link rel="stylesheet" type="text/css" href="/css/newcustomer.css">
 	<link rel="stylesheet" type="text/css" href="/css/product-info.css">
+	<link rel="stylesheet" type="text/css" href="/css/newproduct.css">
+
 
 </head>
 <body>

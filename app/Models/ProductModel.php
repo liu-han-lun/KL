@@ -9,7 +9,7 @@
 	{		
 		protected $table = 'product-info';
 		protected $allowedFields = [
-			'companyName'	,
+			'systemNum'		,
 			'productNum'	,
 			'productSpec'	,
 			'unit'			,

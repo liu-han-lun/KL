@@ -6,7 +6,7 @@
 				<a href="ProductInfo">產品資料</a>			
 			</div>
 			<div class = "product-info-item">
-				<a href="">+ 新增產品</a>
+				<a href="ProductInfo/add">+ 新增產品</a>
 			</div>
 		</div>
 		<div class="product-info-block">
@@ -15,6 +15,11 @@
 					<caption>福隆</caption>				
 					<tbody>								
 						<tr class="title">
+							<td>
+								<p1>
+									NO.
+								</p1>
+							</td>
 							<td>
 								<p1>
 									品號
@@ -49,6 +54,11 @@
 						<?php $i = 1 ?>
 						<?php foreach($queryA as $row): ?>
 							<tr>
+								<td>
+									<p>
+										<?php echo "0".$i."\n" ?>
+									</p>
+								</td>
 								<td>
 									<p>
 										<?php echo $row['productNum'] ?>
@@ -90,6 +100,11 @@
 						<tr class="title">
 							<td>
 								<p1>
+									NO.
+								</p1>
+							</td>
+							<td>
+								<p1>
 									品號
 								</p1>
 							</td>
@@ -120,8 +135,13 @@
 							</td>
 						</tr>
 						<?php $i = 1 ?>
-						<?php foreach($queryA as $row): ?>
+						<?php foreach($queryB as $row): ?>
 							<tr>
+								<td>
+									<p>
+										<?php echo "0".$i."\n" ?>
+									</p>
+								</td>
 								<td>
 									<p>
 										<?php echo $row['productNum'] ?>
