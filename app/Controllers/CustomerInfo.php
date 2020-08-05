@@ -27,7 +27,6 @@
 		public function runAdd($page ='runAdd')
 		{
 			$this->model->insert([
-				'systemNum'  	=> $this->request->getPost('systemNum') ,
 				'companyName'	=> $this->request->getPost('companyName'),
 	            'tel'        	=> $this->request->getPost('tel'),
 	            'fax'        	=> $this->request->getPost('fax'),
@@ -47,7 +46,6 @@
 		public function runEdit()
 		{
 			$this->model->update($this->request->getPost('id'),[
-				'systemNum'    => $this->request->getPost('systemNum'),
             	'companyName'  => $this->request->getPost('companyName'),
             	'tel'          => $this->request->getPost('tel'),
             	'fax'          => $this->request->getPost('fax'),

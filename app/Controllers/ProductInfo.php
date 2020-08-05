@@ -15,24 +15,23 @@
 		}
 
 		public function index($page = 'ProductInfo')
-		{
-			return view('Pages/BasicInfo/ProductInfo/index',[
-				'queryA' => $this->ProductModel->where(['systemNum' => 'text01'])->find(),
-				'queryB' => $this->ProductModel->where(['systemNum' => 'text02'])->find()
+		{				
+			return view('Pages/BasicInfo/ProductInfo/index',[			
+				'query' => $this->ProductModel->join('customer-info','customer-info.id = product-info.customerId')->orderBy('customer-info.id')->find()
 			]) ;
 		}
 
 		public function add()
 		{
 			return view('Pages/BasicInfo/ProductInfo/add',[
-				'query' => $this->CustomerModel->select(['systemNum','companyName'])->find() 
+				'query' => $this->CustomerModel->select(['id','companyName'])->find() 
 			]) ;
 		}
 
 		public function runAdd()
-		{
+		{			
 			$this->ProductModel->insert([
-	            'systemNum'		=> $this->request->getPost('systemNum'),
+	            'customerId'	=> $this->request->getPost('customerId'),
 	            'productNum'	=> $this->request->getPost('productNum'),
 	            'productSpec'	=> $this->request->getPost('productSpec'),
 	            'unit'			=> $this->request->getPost('unit'),

@@ -16,7 +16,7 @@
 						<tr>
 							<td class="title">
 								<h1>
-									編號
+									NO.
 								</h1>
 							</td>
 							<td class="title">
@@ -68,7 +68,7 @@
 								</td>
 								<td>
 									<p>
-										<?php echo $row['systemNum'] ?>
+										<?php echo $row['id'] ?>
 									</p>
 								</td>
 								<td>

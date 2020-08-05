@@ -7,7 +7,7 @@
 	 class CustomerModel extends \CodeIgniter\Model
 	 {
 	 	protected $table = 'customer-info' ;
-	 	protected $allowedFields = ['systemNum', 'companyName', 'tel', 'fax', 'address', 'guiNum'] ;
+	 	protected $allowedFields = ['companyName', 'tel', 'fax', 'address', 'guiNum'] ;
 	 } 
 
 

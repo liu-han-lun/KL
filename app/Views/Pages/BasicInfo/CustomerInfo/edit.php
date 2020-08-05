@@ -17,7 +17,7 @@
 									<h1>電腦編號</h1>								
 								</th>
 								<th>
-									<input type="text" name="systemNum" class="input-text" required="required" value="<?php echo $customer['systemNum'] ?>">				
+									<?php echo $customer['id'] ?>			
 								</th>
 							</tr>
 							<tr>

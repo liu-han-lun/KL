@@ -14,14 +14,6 @@
 						<thead>
 							<tr>
 								<th>
-									<h1>電腦編號</h1>								
-								</th>
-								<th>
-									<input type="text" name="systemNum" class="input-text" required="required">				
-								</th>
-							</tr>
-							<tr>
-								<th>
 									<h1>公司名稱</h1>									
 								</th>
 								<th>

@@ -1,5 +1,6 @@
 <?php echo view('Templates/Header') ; ?>
 <?php echo view('Templates/Content') ; ?>
+
 	<section class = "product-info">
 		<div class="work">
 			<div class = "work-item">
@@ -22,85 +23,7 @@
 							</td>
 							<td>
 								<p1>
-									品號
-								</p1>
-							</td>
-							<td>
-								<p1>
-									品名規格
-								</p1>
-							</td>
-							<td>
-								<p1>
-									單位
-								</p1>
-							</td>
-							<td>
-								<p1>
-									單價
-								</p1>
-							</td>
-							<td>
-								<p1>
-									議價
-								</p1>
-							</td>
-							<td>
-								<p1>
-									備註
-								</p1>
-							</td>
-						</tr>
-						<?php $i = 1 ?>
-						<?php foreach($queryA as $row): ?>
-							<tr>
-								<td>
-									<p>
-										<?php echo "0".$i."\n" ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['productNum'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['productSpec'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['unit'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['unitPrice'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['sellingPrice'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['PS'] ?>
-									</p>
-								</td>
-							</tr>
-						<?php $i++ ?>
-						<?php endforeach ?>	
-					</tbody>
-				</table>
-				<table>	
-					<caption>萬得富</caption>				
-					<tbody>								
-						<tr class="title">
-							<td>
-								<p1>
-									NO.
+									客戶編號
 								</p1>
 							</td>
 							<td>
@@ -135,11 +58,16 @@
 							</td>
 						</tr>
 						<?php $i = 1 ?>
-						<?php foreach($queryB as $row): ?>
+						<?php foreach($query as $row ): ?>
 							<tr>
 								<td>
 									<p>
 										<?php echo "0".$i."\n" ?>
+									</p>
+								</td>
+								<td>
+									<p>
+										<?php echo $row['customerId'] ?>
 									</p>
 								</td>
 								<td>
@@ -170,6 +98,11 @@
 								<td>
 									<p>
 										<?php echo $row['PS'] ?>
+									</p>
+								</td>
+								<td>
+									<p>
+										<?php echo $row['companyName'] ?>
 									</p>
 								</td>
 							</tr>

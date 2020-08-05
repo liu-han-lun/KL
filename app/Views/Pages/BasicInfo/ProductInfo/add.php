@@ -19,9 +19,9 @@
 									</p>
 								</td>
 								<td>
-									<select name="systemNum">
+									<select name="customerId">
 										<?php foreach( $query as $row ): ?>
-											<option value="<?php echo $row['systemNum'] ?>">
+											<option value="<?php echo $row['id'] ?>">
 												<?php echo $row['companyName'] ?>
 											</option>
 										<?php endforeach ?>
