@@ -1,13 +1,6 @@
 <?php echo view('Templates/Header') ; ?>
 <?php echo view('Templates/Content') ; ?>
-<?php foreach ($companyName as $row) {
-		echo $row['companyName']."\n";
-		foreach ($queryA as $rowB) {
-			if($rowB['customerId'] == $row['id']){
-				echo $rowB['customerId']."\n" ;
-			}
-		}
-} ?>
+
 	<section class = "product-info">
 		<div class="work">
 			<div class = "work-item">
@@ -64,6 +57,12 @@
 									備註
 								</p1>
 							</td>
+							<td>
+								<p1>
+									廠商
+								</p1>
+							</td>
+
 						</tr>
 						<?php $i = 1 ?>
 						<?php foreach($queryA as $rowB ): ?>
@@ -115,8 +114,8 @@
 										</p>
 									</td>
 								</tr>
+								<?php $i++ ?>
 							<?php endif ; ?>
-						<?php $i++ ?>
 						<?php endforeach ?>	
 					</tbody>
 				</table>
