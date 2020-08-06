@@ -15,9 +15,12 @@
 		}
 
 		public function index($page = 'ProductInfo')
-		{				
+		{	
+			$data = $this->CustomerModel->select(['customer-info.id','companyName'])->join('product-info','product-info.customerId = customer-info.id')->distinct()->orderBy('customer-info.id')->find() ;	
+
 			return view('Pages/BasicInfo/ProductInfo/index',[			
-				'query' => $this->ProductModel->join('customer-info','customer-info.id = product-info.customerId')->orderBy('customer-info.id')->find()
+				'queryA' => $this->ProductModel->join('customer-info','customer-info.id = product-info.customerId')->orderBy('product-info.id')->find(),
+				'companyName' => $data 
 			]) ;
 		}
 

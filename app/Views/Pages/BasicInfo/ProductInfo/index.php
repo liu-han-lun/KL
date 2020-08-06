@@ -1,6 +1,13 @@
 <?php echo view('Templates/Header') ; ?>
 <?php echo view('Templates/Content') ; ?>
-
+<?php foreach ($companyName as $row) {
+		echo $row['companyName']."\n";
+		foreach ($queryA as $rowB) {
+			if($rowB['customerId'] == $row['id']){
+				echo $rowB['customerId']."\n" ;
+			}
+		}
+} ?>
 	<section class = "product-info">
 		<div class="work">
 			<div class = "work-item">
@@ -12,8 +19,9 @@
 		</div>
 		<div class="product-info-block">
 			<div class="product-info-block-form">
+				<?php foreach($companyName as $rowA ) : ?>
 				<table>	
-					<caption>福隆</caption>				
+					<caption><?php echo $rowA['companyName'] ; ?></caption>				
 					<tbody>								
 						<tr class="title">
 							<td>
@@ -58,58 +66,61 @@
 							</td>
 						</tr>
 						<?php $i = 1 ?>
-						<?php foreach($query as $row ): ?>
-							<tr>
-								<td>
-									<p>
-										<?php echo "0".$i."\n" ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['customerId'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['productNum'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['productSpec'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['unit'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['unitPrice'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['sellingPrice'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['PS'] ?>
-									</p>
-								</td>
-								<td>
-									<p>
-										<?php echo $row['companyName'] ?>
-									</p>
-								</td>
-							</tr>
+						<?php foreach($queryA as $rowB ): ?>
+							<?php if($rowB['customerId'] == $rowA['id']): ?>
+								<tr>
+									<td>
+										<p>
+											<?php echo "0".$i."\n" ?>
+										</p>
+									</td>
+									<td>
+										<p>
+											<?php echo $rowB['customerId'] ?>
+										</p>
+									</td>
+									<td>
+										<p>
+											<?php echo $rowB['productNum'] ?>
+										</p>
+									</td>
+									<td>
+										<p>
+											<?php echo $rowB['productSpec'] ?>
+										</p>
+									</td>
+									<td>
+										<p>
+											<?php echo $rowB['unit'] ?>
+										</p>
+									</td>
+									<td>
+										<p>
+											<?php echo $rowB['unitPrice'] ?>
+										</p>
+									</td>
+									<td>
+										<p>
+											<?php echo $rowB['sellingPrice'] ?>
+										</p>
+									</td>
+									<td>
+										<p>
+											<?php echo $rowB['PS'] ?>
+										</p>
+									</td>
+									<td>
+										<p>
+											<?php echo $rowB['companyName'] ?>
+										</p>
+									</td>
+								</tr>
+							<?php endif ; ?>
 						<?php $i++ ?>
 						<?php endforeach ?>	
 					</tbody>
 				</table>
+				<?php endforeach  ?>				
 			</div>
 		</div>			
 	</section>	
