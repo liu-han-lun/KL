@@ -90,36 +90,59 @@
 
 .product-info-block-form{
 	padding-bottom: 15% ;
-	overflow: auto ;
 }
 
 .product-info-block-form table{
 	border-collapse: collapse ;
+	
+
 }
 
 
 .product-info-block-form caption{
+
+	font-family: '微軟正黑體';	
+
 	color: black ;
 	font-size: 34px ;
 	letter-spacing: 8px ;
 	text-align: left ;
 	padding-top: 10% ;
-	padding-bottom: 3% ;
+	padding-bottom: 1% ;
 }
 
 .product-info-block-form tbody{
+	width: 80%;
+	display: inline-block;
+	padding: 1rem 8rem;
 	background-color: rgb(255,255,255) ;
-	text-align: right ;
+	text-align: center ;
+	margin: 0 auto ;
+
 
 
 }
-.product-info-block-form .title{	
+.product-info-block-form .title{
+	padding-top: 2% ;	
 	font-size: 20px;
+	border-top : none;
+	border-bottom: 3px rgb(11,34,55) solid;
 }
 .product-info-block-form td{
-	
-	padding: 0.75rem 1rem ;
+	width: 10rem ;
+	text-align: right ;	
+	font-family: '微軟正黑體';
+	font-size: 14px ;
+	padding: 1rem 0.5rem ;
+	border-top: 2px rgb(230,230,230) solid;
 	white-space: nowrap ;
+	overflow-x: auto ;
+}
+
+.product-info-block-form p {
+	font-family: '微軟正黑體';
+	font-size: 18px ;	
+
 }
 
 

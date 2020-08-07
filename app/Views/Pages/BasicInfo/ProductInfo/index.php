@@ -16,48 +16,48 @@
 				<table>	
 					<caption><?php echo $rowA['companyName'] ; ?></caption>				
 					<tbody>								
-						<tr class="title">
-							<td>
+						<tr >
+							<td class="title">
 								<p1>
 									NO.
 								</p1>
 							</td>
-							<td>
+							<td class="title">
 								<p1>
 									客戶編號
 								</p1>
 							</td>
-							<td>
+							<td class="title">
 								<p1>
 									品號
 								</p1>
 							</td>
-							<td>
+							<td class="title">
 								<p1>
 									品名規格
 								</p1>
 							</td>
-							<td>
+							<td class="title">
 								<p1>
 									單位
 								</p1>
 							</td>
-							<td>
+							<td class="title">
 								<p1>
 									單價
 								</p1>
 							</td>
-							<td>
+							<td class="title">
 								<p1>
 									議價
 								</p1>
 							</td>
-							<td>
+							<td class="title">
 								<p1>
 									備註
 								</p1>
 							</td>
-							<td>
+							<td class="title">
 								<p1>
 									廠商
 								</p1>
