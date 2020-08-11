@@ -17,7 +17,7 @@
 					<caption><?php echo $rowA['companyName'] ; ?></caption>				
 					<tbody>								
 						<tr >
-							<td class="title">
+							<td class="title" style = "padding-left: 0rem ;">
 								<p1>
 									NO.
 								</p1>
@@ -62,11 +62,18 @@
 									廠商
 								</p1>
 							</td>
-
+							<td class="title">
+								<p1>
+								</p1>
+							</td>
+							<td class="title">
+								<p1>
+								</p1>
+							</td>
 						</tr>
 						<?php $i = 1 ?>
-						<?php foreach($queryA as $rowB ): ?>
-							<?php if($rowB['customerId'] == $rowA['id']): ?>
+						<?php foreach($query as $rowB ): ?>
+							<?php if($rowB['customerId'] == $rowA['cust_id']): ?>
 								<tr>
 									<td>
 										<p>
@@ -113,9 +120,16 @@
 											<?php echo $rowB['companyName'] ?>
 										</p>
 									</td>
+									<td>
+										<a href="/ProductInfo/edit?id=<?php echo $rowB['prod_id'] ?>">修改</a>
+										<form action="/ProductInfo/delete" method="post" accept-charset="utf-8">
+											<input type="hidden" name="id" value="<?php echo $rowB['prod_id'] ?>">
+											<input type="submit" name="delete" value="刪除">				
+									    </form>
+									</td>			
 								</tr>
 								<?php $i++ ?>
-							<?php endif ; ?>
+							<?php endif  ?>
 						<?php endforeach ?>	
 					</tbody>
 				</table>
