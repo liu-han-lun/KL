@@ -12,9 +12,9 @@
 		</div>
 		<div class="product-info-block">
 			<div class="product-info-block-form">
-				<?php foreach($companyName as $rowA ) : ?>
+				<?php for($i = 0 ; $i < count($text) ; $i++) : ?>
 				<table>	
-					<caption><?php echo $rowA['companyName'] ; ?></caption>				
+					<caption><?php echo $text[$i]['companyName'] ; ?></caption>				
 					<tbody>								
 						<tr >
 							<td class="title" style = "padding-left: 0rem ;">
@@ -71,9 +71,7 @@
 								</p1>
 							</td>
 						</tr>
-						<?php $i = 1 ?>
-						<?php foreach($query as $rowB ): ?>
-							<?php if($rowB['customerId'] == $rowA['cust_id']): ?>
+						<?php foreach($text[$i]['query'] as $row) : ?>
 								<tr>
 									<td>
 										<p>
@@ -82,58 +80,56 @@
 									</td>
 									<td>
 										<p>
-											<?php echo $rowB['customerId'] ?>
+											<?php echo $row['customerId'] ?>
 										</p>
 									</td>
 									<td>
 										<p>
-											<?php echo $rowB['productNum'] ?>
+											<?php echo $row['productNum'] ?>
 										</p>
 									</td>
 									<td>
 										<p>
-											<?php echo $rowB['productSpec'] ?>
+											<?php echo $row['productSpec'] ?>
 										</p>
 									</td>
 									<td>
 										<p>
-											<?php echo $rowB['unit'] ?>
+											<?php echo $row['unit'] ?>
 										</p>
 									</td>
 									<td>
 										<p>
-											<?php echo $rowB['unitPrice'] ?>
+											<?php echo $row['unitPrice'] ?>
 										</p>
 									</td>
 									<td>
 										<p>
-											<?php echo $rowB['sellingPrice'] ?>
+											<?php echo $row['sellingPrice'] ?>
 										</p>
 									</td>
 									<td>
 										<p>
-											<?php echo $rowB['PS'] ?>
+											<?php echo $row['PS'] ?>
 										</p>
 									</td>
 									<td>
 										<p>
-											<?php echo $rowB['companyName'] ?>
+											<?php echo $row['companyName'] ?>
 										</p>
 									</td>
 									<td>
-										<a href="/ProductInfo/edit?id=<?php echo $rowB['prod_id'] ?>">修改</a>
+										<a href="/ProductInfo/edit?id=<?php echo $row['prod_id'] ?>">修改</a>
 										<form action="/ProductInfo/delete" method="post" accept-charset="utf-8">
-											<input type="hidden" name="id" value="<?php echo $rowB['prod_id'] ?>">
+											<input type="hidden" name="id" value="<?php echo $row['prod_id'] ?>">
 											<input type="submit" name="delete" value="刪除">				
 									    </form>
 									</td>			
 								</tr>
-								<?php $i++ ?>
-							<?php endif  ?>
-						<?php endforeach ?>	
+						<?php endforeach  ?>	
 					</tbody>
 				</table>
-				<?php endforeach  ?>				
+				<?php endfor  ?>				
 			</div>
 		</div>			
 	</section>	

@@ -16,23 +16,36 @@
 
 		public function index($page = 'ProductInfo')
 		{	
-			$data = $this->CustomerModel
-					->select('customer-info.id AS cust_id , companyName , product-info.customerId')
-					->join('product-info','product-info.customerId = customer-info.id ')
-					->distinct()
-					->orderBy('cust_id')
-					->find() ;
-
+			
 			$query = $this->ProductModel
-					->select('product-info.id AS prod_id , product-info.*,customer-info.id , customer-info.companyName')
+					->select('product-info.id AS prod_id , product-info.*,customer-info.id AS cust_id, customer-info.companyName')
 					->join('customer-info','customer-info.id = product-info.customerId')
-					->orderBy('prod_id')
+					->orderBy('cust_id ,prod_id ')
 					->find() ;
 
-								
+			$text[0]['companyName'] = $query[0]['companyName']	;
+			$text[0]['cust_id']		= $query[0]['cust_id']		;
+
+			for($i=0 , $j = 0 ,$index=0 ; $i<count($query) ; $i++)
+			{  			
+				if($text[$index]['cust_id'] != $query[$i]['cust_id'])
+				{
+					$index += 1 ;
+					$text[$index]['companyName'] = $query[$i]['companyName'] ;
+					$text[$index]['cust_id']	 = $query[$i]['cust_id']	 ;		
+				}
+
+				if($query[$i]['cust_id'] == $text[$index]['cust_id'])
+				{	
+					
+					$text[$index]['query'][$j] = $query[$i]  ;
+					$j++ ;							
+				}			
+			}
+							
 			return view('Pages/BasicInfo/ProductInfo/index',[			
 				'query' =>$query,
-				'companyName' => $data,
+				'text' => $text 
 			]) ;
 		}
 
